@@ -52,8 +52,10 @@ function dragstart(event){
 	
 }
 
-function dragend(event){ // ondragend
-	document.getElementById(boxId).style.display = '';
+function dragend(event){
+	setTimeout(function(){
+		document.getElementById(boxId).style.display = '';
+	},5);
 }
 
 function allowDrop(event){
